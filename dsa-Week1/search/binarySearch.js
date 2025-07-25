@@ -1,3 +1,4 @@
+// Binary search using iteration
 
 function binarySearch(arr,target){
 
@@ -8,10 +9,10 @@ function binarySearch(arr,target){
     
     let left = 0;
     let right = arr.length-1;
-    let mid;
+    
     while(left<=right){
-        mid = Math.floor((left+right)/2);
-        if(arr[mid]==target){
+        let mid = Math.floor((left+right)/2);
+        if(arr[mid]===target){
             return mid;
         }
         if(target<arr[mid]){
@@ -26,6 +27,7 @@ function binarySearch(arr,target){
 
 console.log(binarySearch([1.1, 1.5, 2.3, 3.6, 4.4, 5.8, 7.2, 8.5],4.4));
 
+// Time complexity = O(log n);
 
 
 

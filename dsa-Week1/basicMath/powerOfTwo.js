@@ -14,4 +14,6 @@ function ifPowerOfTwo(n){
 
 console.log(ifPowerOfTwo(1));
 console.log(ifPowerOfTwo(8));
-console.log(ifPowerOfTwo(5))
+console.log(ifPowerOfTwo(5));
+
+//Time complexity = O(log n)

@@ -10,3 +10,5 @@ function isBitwisePowerOfTwo(n){
 console.log(isBitwisePowerOfTwo(1));
 console.log(isBitwisePowerOfTwo(8));
 console.log(isBitwisePowerOfTwo(5));
+
+//Time complexity = O(1) Since it executes only once

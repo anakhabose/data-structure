@@ -23,3 +23,6 @@ function quickSort(arr){
 
 let arr=[1,6,2,7,9,3];
 console.log(quickSort(arr));
+
+//Worst case - O(n^2)
+//Average case - O(nlogn)

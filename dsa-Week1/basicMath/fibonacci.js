@@ -7,4 +7,6 @@ function fibonacci(n){
     return fib;
 }
 
-console.log(fibonacci(7))
+console.log(fibonacci(7));
+
+//Time complexity = O(n)

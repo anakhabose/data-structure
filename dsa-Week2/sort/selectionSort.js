@@ -19,3 +19,5 @@ function selectionSort(arr){
 
 let arr=[5,7,6,9,8,2,1];
 console.log(selectionSort(arr));
+
+//Big-O = O(n^2)

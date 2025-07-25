@@ -1,0 +1,90 @@
+📝 Sliding Window Technique — Notes for Quick Reference
+
+✅ What is Sliding Window?
+A powerful algorithmic technique used to reduce time complexity for problems involving contiguous subarrays or substrings.
+
+Instead of checking every possible subarray (which takes O(n²) time),
+Sliding Window allows solving them in O(n) by maintaining a "window" of elements and sliding it across the array/string.
+
+✅ When to Use Sliding Window?
+Find maximum/minimum sum of subarrays of fixed length
+
+Subarray/substring problems involving contiguous elements
+
+Count occurrences of patterns/anagrams within a string
+
+Problems asking for averages or sums in a range
+
+Longest/Shortest substring with certain conditions
+
+✅ Types of Sliding Window
+Type	Example Problem
+Fixed-size Window	Maximum sum of subarray of size k
+Variable-size Window	Smallest subarray with sum ≥ S
+Window with Frequency Map	Count occurrences of anagrams
+Deque-based Window	Maximum in all sliding windows of size k
+
+✅ General Approach for Fixed-size Window
+Calculate the sum/condition for the first window manually.
+
+Slide the window by adding the new element (right) and removing the first element (left).
+
+Update the result on each slide.
+
+js
+Copy
+Edit
+// Template for fixed-size sliding window
+for (let i = 0; i < k; i++) {
+    // Precalculate first window
+}
+
+for (let i = k; i < arr.length; i++) {
+    // Slide the window: Add arr[i], Remove arr[i - k]
+}
+✅ General Approach for Variable-size Window
+Use two pointers (start and end).
+
+Expand the window (end++) until the condition is met.
+
+Shrink the window (start++) to find optimal length or condition.
+
+Repeat.
+
+js
+Copy
+Edit
+let start = 0;
+for (let end = 0; end < arr.length; end++) {
+    // Expand the window
+
+    while (condition is met) {
+        // Shrink the window and update result
+        start++;
+    }
+}
+✅ Common Problems You Should Practice:
+✅ Maximum Sum of Subarray of Size k
+
+✅ First Negative Number in Every Window of Size k
+
+✅ Count Occurrences of Anagrams in a String
+
+✅ Average of All Subarrays of Size k
+
+✅ Subarray with Given Sum (Fixed Size)
+
+✅ Longest Substring with k Distinct Characters
+
+✅ Maximum of All Subarrays of Size k (Using Deque)
+
+✅ Key Points to Remember:
+Use Fixed-size window when k is known.
+
+Use Variable-size window when window size depends on conditions.
+
+Use Maps/Sets inside windows when frequency tracking is needed.
+
+For Maximum/Minimum in window, use Deque.
+
+Sliding Window works best on contiguous data problems.

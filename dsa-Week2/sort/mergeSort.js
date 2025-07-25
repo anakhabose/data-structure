@@ -31,3 +31,6 @@ function merge(left,right){
 
 let arr=[9,6,1,5,3,4];
 console.log(mergeSort(arr));
+
+
+//Big-O = O(nlogn)

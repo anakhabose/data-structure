@@ -17,3 +17,6 @@ function bubbleSort(arr){
 }
 
 console.log(bubbleSort([1,6,3,4,8,19,2]))
+
+
+// Big-O = O(n^2);
